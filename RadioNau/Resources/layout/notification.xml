@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/notification" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="horizontal">
+    <ImageView android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:id="@+id/notification_image" android:layout_width="100dp" android:layout_height="100dp" />
+    <LinearLayout android:layout_centerVertical="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/notification_LinearLayout" android:layout_toRightOf="@+id/notification_image" android:orientation="vertical" >
+      <TextView android:textColor="#1C2833" android:id="@+id/notification_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingBottom="5dp" android:singleLine="true" android:text="RADIO MEDIANAU" android:textStyle="bold" android:ellipsize="end" android:lines="1" />  
+      <TextView android:textColor="#1C2833" android:id="@+id/notification_text_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingTop="6dp" android:paddingBottom="5dp" android:singleLine="true" android:text="Song Title" android:ellipsize="end" android:lines="1" />
+      <TextView android:textColor="#1C2833" android:id="@+id/notification_text_artist" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingLeft="10dp" android:paddingTop="2dp" android:text="artist name" android:lines="1" android:ellipsize="end" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" >
+      <ImageView android:layout_marginLeft="25dp" android:id="@+id/notification_button_cancel" android:layout_width="30dp" android:layout_height="30dp" android:src="@android:drawable/ic_menu_close_clear_cancel" />
+      <ImageView android:padding="5dp" android:id="@+id/notification_button_play" android:layout_width="60dp" android:layout_height="60dp" android:src="@android:drawable/ic_media_play" />
+    </LinearLayout>
+</RelativeLayout>

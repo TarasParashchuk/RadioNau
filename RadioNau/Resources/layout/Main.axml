@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg">
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:minHeight="?attr/actionBarSize"
+      android:background="?attr/colorAccent"
+      android:theme="@style/MainTheme"
+      app:layout_widthPercent="100%"
+      app:layout_heightPercent="12%" />
+  <LinearLayout
+     android:layout_centerHorizontal="true"
+     app:layout_marginTopPercent="15.3%"
+     app:layout_widthPercent="82%"
+     app:layout_heightPercent="75%"
+     android:background="@drawable/bg_panel"
+     android:id="@+id/bg"/>
+  <ffimageloading.views.ImageViewAsync
+      android:layout_below="@+id/toolbar"
+      android:src="@android:drawable/ic_menu_gallery"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="false"
+      app:layout_widthPercent="75%"
+      app:layout_aspectRatio="100%"
+      app:layout_marginTopPercent="5%"
+      app:layout_marginBottomPercent="1%"
+      android:id="@+id/Image" />
+  <ImageView
+      android:layout_below="@+id/toolbar"
+      android:src="@mipmap/ic_play_circle_outline_white_48dp"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="false"
+      app:layout_widthPercent="25%"
+      app:layout_aspectRatio="100%"
+      app:layout_marginTopPercent="23%"
+      android:id="@+id/Image_Play" />
+  <TextView
+      android:layout_below="@+id/Image"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="false"
+      android:textColor="#FFFFFF"
+      android:textStyle="bold"
+      android:textSize="20dp"
+      app:layout_marginLeftPercent="13%"
+      app:layout_marginRightPercent="13%"
+      app:layout_marginBottomPercent="0.5%"
+      app:layout_widthPercent="100%"
+      android:layout_height="wrap_content"
+      android:id="@+id/Name_Song" />
+  <TextView
+      android:layout_below="@+id/Name_Song"
+      android:gravity="center"
+      android:layout_centerHorizontal="true"
+      android:layout_centerVertical="false"
+      android:textColor="#E5E7E9"
+      android:textSize="17dp"
+      app:layout_marginLeftPercent="13%"
+      app:layout_marginRightPercent="13%"
+      app:layout_widthPercent="100%"
+      android:layout_height="wrap_content"
+      android:id="@+id/Name_Artist" />
+      <RelativeLayout
+        android:layout_below="@+id/Name_Artist"
+        app:layout_heightPercent="5%"
+        app:layout_widthPercent="78%"
+        app:layout_marginLeftPercent="13%"
+        app:layout_marginRightPercent="13%"
+        android:id="@+id/bg1"
+        android:layout_centerHorizontal="true">
+      <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/baseline_volume_down_white_48"
+            android:id="@+id/volume_image"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+      <SeekBar
+            android:max="15"
+            android:progress="7"
+            android:layout_toRightOf="@+id/volume_image"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Sound_Volume"
+            android:background="@null"
+            android:progressDrawable="@drawable/seekbar"
+            android:thumb="@drawable/seekbar_thumb" />
+        </RelativeLayout>
+      </android.support.percent.PercentRelativeLayout>
