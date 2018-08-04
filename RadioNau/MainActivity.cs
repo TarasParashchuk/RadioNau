@@ -67,7 +67,7 @@ namespace RadioNau
         {
             audioManager.SetStreamVolume(Stream.Music, i, 0);
         }
-
+        /*
         public void OnStartTrackingTouch(SeekBar seekBar)
         {
         }
@@ -76,7 +76,7 @@ namespace RadioNau
         {
 
         }
-
+        */
         public void GetDataNotificationRadio(bool buttonflag)
         {
             if (buttonflag)
