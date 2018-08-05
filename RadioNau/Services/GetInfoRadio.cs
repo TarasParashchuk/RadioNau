@@ -62,7 +62,7 @@ namespace RadioNau.Services
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error: " + ex);
+                Console.WriteLine("Error:" + ex);
             }
 
             return json.song;
