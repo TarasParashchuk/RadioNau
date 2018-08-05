@@ -60,23 +60,24 @@ namespace RadioNau
             play.Click += Play_Click;
 
             Thread_get_data();
-            //Thread_get_glow_effect();
+            Thread_get_glow_effect();
         }
 
         public void OnProgressChanged(SeekBar seekBar, int i, bool b)
         {
             audioManager.SetStreamVolume(Stream.Music, i, 0);
         }
-        /*
+        
         public void OnStartTrackingTouch(SeekBar seekBar)
         {
-        }
 
+        }
+        
         public void OnStopTrackingTouch(SeekBar seekBar)
         {
 
         }
-        */
+        
         public void GetDataNotificationRadio(bool buttonflag)
         {
             if (buttonflag)
