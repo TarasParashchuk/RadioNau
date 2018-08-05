@@ -14,10 +14,13 @@ namespace RadioNau.Services
     {
         public const string ActionStartGetInfoRadio = "action.START";
         public const string ActionStopGetInfoRadio = "action.STOP";
+        private Model_JSON json;
 
         public override void OnCreate()
         {
             base.OnCreate();
+
+            json = new Model_JSON();
         }
 
         public override IBinder OnBind(Intent intent)
@@ -53,7 +56,14 @@ namespace RadioNau.Services
             str = str.Remove(0, 20);
             str = str.Remove(str.Length - 3, 3);
 
-            var json = JsonConvert.DeserializeObject<Model_JSON>(str);
+            try
+            {
+                json = JsonConvert.DeserializeObject<Model_JSON>(str);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error: " + ex);
+            }
 
             return json.song;
         }

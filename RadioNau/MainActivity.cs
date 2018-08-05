@@ -19,6 +19,7 @@ namespace RadioNau
         private TextView name_song;
         private TextView name_singer;
         private ImageView play;
+        private ImageView volume_image;
         private SeekBar volumebar;
         private AudioManager audioManager;
         private bool flag = true;
@@ -40,6 +41,7 @@ namespace RadioNau
             image = FindViewById<ImageViewAsync>(Resource.Id.Image);
             play = FindViewById<ImageView>(Resource.Id.Image_Play);
             volumebar = FindViewById<SeekBar>(Resource.Id.Sound_Volume);
+            volume_image = FindViewById<ImageView>(Resource.Id.volume_image);
 
             audioManager = (AudioManager)GetSystemService(Context.AudioService);
             volumebar.SetOnSeekBarChangeListener(this);
@@ -66,16 +68,20 @@ namespace RadioNau
         public void OnProgressChanged(SeekBar seekBar, int i, bool b)
         {
             audioManager.SetStreamVolume(Stream.Music, i, 0);
+
+            if (seekBar.Progress == 0)
+                volume_image.SetImageResource(Resource.Mipmap.baseline_volume_off_white_48);
+            else if (seekBar.Progress > 6)
+                volume_image.SetImageResource(Resource.Mipmap.baseline_volume_up_white_48);
+            else volume_image.SetImageResource(Resource.Mipmap.baseline_volume_down_white_48);
         }
         
         public void OnStartTrackingTouch(SeekBar seekBar)
-        {
-
+        {    
         }
         
         public void OnStopTrackingTouch(SeekBar seekBar)
-        {
-
+        { 
         }
         
         public void GetDataNotificationRadio(bool buttonflag)
