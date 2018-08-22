@@ -39,7 +39,7 @@ namespace RadioNau
             RegisterReceiver(new Receiver.ButtonPlayNotificationReceiver(), new IntentFilter(Receiver.ButtonPlayNotificationReceiver.ReceiverPlay));
 
             image = FindViewById<ImageViewAsync>(Resource.Id.Image);
-            play = FindViewById<ImageView>(Resource.Id.Image_Play);
+            play = FindViewById<ImageView>(Resource.Id.ImagePlay);
             volumebar = FindViewById<SeekBar>(Resource.Id.Sound_Volume);
             volume_image = FindViewById<ImageView>(Resource.Id.volume_image);
 
@@ -62,7 +62,7 @@ namespace RadioNau
             play.Click += Play_Click;
 
             Thread_get_data();
-            Thread_get_glow_effect();
+            //Thread_get_glow_effect();
         }
 
         public void OnProgressChanged(SeekBar seekBar, int i, bool b)
@@ -125,7 +125,7 @@ namespace RadioNau
             StartService(intent);
         }
 
-        private async void Thread_get_glow_effect()
+        /*private async void Thread_get_glow_effect()
         {
             var Linear_Layout = FindViewById<LinearLayout>(Resource.Id.bg);
             while (true)
@@ -138,7 +138,7 @@ namespace RadioNau
                     await Task.Delay(10000);
                 }
             }
-        }
+        }*/
 
         private async void Thread_get_data()
         {

@@ -2405,20 +2405,20 @@ namespace RadioNau
 			// aapt resource value: 0x7f080033
 			public const int FUNCTION = 2131230771;
 			
-			// aapt resource value: 0x7f08009a
-			public const int Image = 2131230874;
+			// aapt resource value: 0x7f080099
+			public const int Image = 2131230873;
 			
-			// aapt resource value: 0x7f08009b
-			public const int Image_Play = 2131230875;
+			// aapt resource value: 0x7f08009a
+			public const int ImagePlay = 2131230874;
 			
 			// aapt resource value: 0x7f080034
 			public const int META = 2131230772;
 			
-			// aapt resource value: 0x7f08009d
-			public const int Name_Artist = 2131230877;
-			
 			// aapt resource value: 0x7f08009c
-			public const int Name_Song = 2131230876;
+			public const int Name_Artist = 2131230876;
+			
+			// aapt resource value: 0x7f08009b
+			public const int Name_Song = 2131230875;
 			
 			// aapt resource value: 0x7f080035
 			public const int SHIFT = 2131230773;
@@ -2426,11 +2426,11 @@ namespace RadioNau
 			// aapt resource value: 0x7f080036
 			public const int SYM = 2131230774;
 			
-			// aapt resource value: 0x7f0800a0
-			public const int Sound_Volume = 2131230880;
+			// aapt resource value: 0x7f08009f
+			public const int Sound_Volume = 2131230879;
 			
-			// aapt resource value: 0x7f0800ac
-			public const int action0 = 2131230892;
+			// aapt resource value: 0x7f0800ab
+			public const int action0 = 2131230891;
 			
 			// aapt resource value: 0x7f08007b
 			public const int action_bar = 2131230843;
@@ -2453,17 +2453,17 @@ namespace RadioNau
 			// aapt resource value: 0x7f080059
 			public const int action_bar_title = 2131230809;
 			
-			// aapt resource value: 0x7f0800a9
-			public const int action_container = 2131230889;
+			// aapt resource value: 0x7f0800a8
+			public const int action_container = 2131230888;
 			
 			// aapt resource value: 0x7f08007c
 			public const int action_context_bar = 2131230844;
 			
-			// aapt resource value: 0x7f0800b0
-			public const int action_divider = 2131230896;
+			// aapt resource value: 0x7f0800af
+			public const int action_divider = 2131230895;
 			
-			// aapt resource value: 0x7f0800aa
-			public const int action_image = 2131230890;
+			// aapt resource value: 0x7f0800a9
+			public const int action_image = 2131230889;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -2480,11 +2480,11 @@ namespace RadioNau
 			// aapt resource value: 0x7f08005b
 			public const int action_mode_close_button = 2131230811;
 			
-			// aapt resource value: 0x7f0800ab
-			public const int action_text = 2131230891;
+			// aapt resource value: 0x7f0800aa
+			public const int action_text = 2131230890;
 			
-			// aapt resource value: 0x7f0800b9
-			public const int actions = 2131230905;
+			// aapt resource value: 0x7f0800b8
+			public const int actions = 2131230904;
 			
 			// aapt resource value: 0x7f08005c
 			public const int activity_chooser_view_content = 2131230812;
@@ -2510,11 +2510,8 @@ namespace RadioNau
 			// aapt resource value: 0x7f08002e
 			public const int beginning = 2131230766;
 			
-			// aapt resource value: 0x7f080099
-			public const int bg = 2131230873;
-			
-			// aapt resource value: 0x7f08009e
-			public const int bg1 = 2131230878;
+			// aapt resource value: 0x7f08009d
+			public const int bg1 = 2131230877;
 			
 			// aapt resource value: 0x7f080056
 			public const int blocking = 2131230806;
@@ -2525,8 +2522,8 @@ namespace RadioNau
 			// aapt resource value: 0x7f080062
 			public const int buttonPanel = 2131230818;
 			
-			// aapt resource value: 0x7f0800ad
-			public const int cancel_action = 2131230893;
+			// aapt resource value: 0x7f0800ac
+			public const int cancel_action = 2131230892;
 			
 			// aapt resource value: 0x7f080044
 			public const int center = 2131230788;
@@ -2540,8 +2537,8 @@ namespace RadioNau
 			// aapt resource value: 0x7f080072
 			public const int checkbox = 2131230834;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int chronometer = 2131230901;
+			// aapt resource value: 0x7f0800b4
+			public const int chronometer = 2131230900;
 			
 			// aapt resource value: 0x7f08004d
 			public const int clip_horizontal = 2131230797;
@@ -2597,8 +2594,8 @@ namespace RadioNau
 			// aapt resource value: 0x7f08002f
 			public const int end = 2131230767;
 			
-			// aapt resource value: 0x7f0800bb
-			public const int end_padder = 2131230907;
+			// aapt resource value: 0x7f0800ba
+			public const int end_padder = 2131230906;
 			
 			// aapt resource value: 0x7f08003e
 			public const int enterAlways = 2131230782;
@@ -2642,8 +2639,8 @@ namespace RadioNau
 			// aapt resource value: 0x7f080061
 			public const int icon = 2131230817;
 			
-			// aapt resource value: 0x7f0800ba
-			public const int icon_group = 2131230906;
+			// aapt resource value: 0x7f0800b9
+			public const int icon_group = 2131230905;
 			
 			// aapt resource value: 0x7f080039
 			public const int ifRoom = 2131230777;
@@ -2651,8 +2648,8 @@ namespace RadioNau
 			// aapt resource value: 0x7f08005e
 			public const int image = 2131230814;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int info = 2131230902;
+			// aapt resource value: 0x7f0800b5
+			public const int info = 2131230901;
 			
 			// aapt resource value: 0x7f080058
 			public const int italic = 2131230808;
@@ -2678,14 +2675,14 @@ namespace RadioNau
 			// aapt resource value: 0x7f080060
 			public const int list_item = 2131230816;
 			
-			// aapt resource value: 0x7f0800be
-			public const int masked = 2131230910;
+			// aapt resource value: 0x7f0800bd
+			public const int masked = 2131230909;
 			
-			// aapt resource value: 0x7f0800af
-			public const int media_actions = 2131230895;
+			// aapt resource value: 0x7f0800ae
+			public const int media_actions = 2131230894;
 			
-			// aapt resource value: 0x7f0800bc
-			public const int message = 2131230908;
+			// aapt resource value: 0x7f0800bb
+			public const int message = 2131230907;
 			
 			// aapt resource value: 0x7f080030
 			public const int middle = 2131230768;
@@ -2708,38 +2705,38 @@ namespace RadioNau
 			// aapt resource value: 0x7f08001d
 			public const int normal = 2131230749;
 			
-			// aapt resource value: 0x7f0800a1
-			public const int notification = 2131230881;
-			
-			// aapt resource value: 0x7f0800a3
-			public const int notification_LinearLayout = 2131230883;
-			
-			// aapt resource value: 0x7f0800b8
-			public const int notification_background = 2131230904;
-			
-			// aapt resource value: 0x7f0800a7
-			public const int notification_button_cancel = 2131230887;
-			
-			// aapt resource value: 0x7f0800a8
-			public const int notification_button_play = 2131230888;
+			// aapt resource value: 0x7f0800a0
+			public const int notification = 2131230880;
 			
 			// aapt resource value: 0x7f0800a2
-			public const int notification_image = 2131230882;
+			public const int notification_LinearLayout = 2131230882;
 			
-			// aapt resource value: 0x7f0800b2
-			public const int notification_main_column = 2131230898;
-			
-			// aapt resource value: 0x7f0800b1
-			public const int notification_main_column_container = 2131230897;
-			
-			// aapt resource value: 0x7f0800a4
-			public const int notification_text = 2131230884;
+			// aapt resource value: 0x7f0800b7
+			public const int notification_background = 2131230903;
 			
 			// aapt resource value: 0x7f0800a6
-			public const int notification_text_artist = 2131230886;
+			public const int notification_button_cancel = 2131230886;
+			
+			// aapt resource value: 0x7f0800a7
+			public const int notification_button_play = 2131230887;
+			
+			// aapt resource value: 0x7f0800a1
+			public const int notification_image = 2131230881;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int notification_main_column = 2131230897;
+			
+			// aapt resource value: 0x7f0800b0
+			public const int notification_main_column_container = 2131230896;
+			
+			// aapt resource value: 0x7f0800a3
+			public const int notification_text = 2131230883;
 			
 			// aapt resource value: 0x7f0800a5
-			public const int notification_text_title = 2131230885;
+			public const int notification_text_artist = 2131230885;
+			
+			// aapt resource value: 0x7f0800a4
+			public const int notification_text_title = 2131230884;
 			
 			// aapt resource value: 0x7f08004b
 			public const int parallax = 2131230795;
@@ -2765,11 +2762,11 @@ namespace RadioNau
 			// aapt resource value: 0x7f080049
 			public const int right = 2131230793;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int right_icon = 2131230903;
+			// aapt resource value: 0x7f0800b6
+			public const int right_icon = 2131230902;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int right_side = 2131230899;
+			// aapt resource value: 0x7f0800b2
+			public const int right_side = 2131230898;
 			
 			// aapt resource value: 0x7f08000c
 			public const int save_image_matrix = 2131230732;
@@ -2873,8 +2870,8 @@ namespace RadioNau
 			// aapt resource value: 0x7f08004a
 			public const int start = 2131230794;
 			
-			// aapt resource value: 0x7f0800ae
-			public const int status_bar_latest_event_content = 2131230894;
+			// aapt resource value: 0x7f0800ad
+			public const int status_bar_latest_event_content = 2131230893;
 			
 			// aapt resource value: 0x7f080075
 			public const int submenuarrow = 2131230837;
@@ -2906,8 +2903,8 @@ namespace RadioNau
 			// aapt resource value: 0x7f080015
 			public const int textinput_error = 2131230741;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int time = 2131230900;
+			// aapt resource value: 0x7f0800b3
+			public const int time = 2131230899;
 			
 			// aapt resource value: 0x7f08001b
 			public const int title = 2131230747;
@@ -2957,11 +2954,11 @@ namespace RadioNau
 			// aapt resource value: 0x7f080016
 			public const int view_offset_helper = 2131230742;
 			
-			// aapt resource value: 0x7f0800bd
-			public const int visible = 2131230909;
+			// aapt resource value: 0x7f0800bc
+			public const int visible = 2131230908;
 			
-			// aapt resource value: 0x7f08009f
-			public const int volume_image = 2131230879;
+			// aapt resource value: 0x7f08009e
+			public const int volume_image = 2131230878;
 			
 			// aapt resource value: 0x7f08003b
 			public const int withText = 2131230779;
@@ -3249,10 +3246,13 @@ namespace RadioNau
 			public const int ic_play_circle_outline_white_48dp = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int logo_min = 2130903046;
+			public const int imagelogo = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int theme = 2130903047;
+			public const int logo_min = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int theme = 2130903048;
 			
 			static Mipmap()
 			{

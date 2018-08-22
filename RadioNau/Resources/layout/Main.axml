@@ -11,13 +11,6 @@
         android:theme="@style/MainTheme"
         app:layout_widthPercent="100%"
         app:layout_heightPercent="12%" />
-    <LinearLayout
-        android:layout_centerHorizontal="true"
-        app:layout_marginTopPercent="15.3%"
-        app:layout_widthPercent="82%"
-        app:layout_heightPercent="75%"
-        android:background="@drawable/bg_panel"
-        android:id="@+id/bg" />
     <ffimageloading.views.ImageViewAsync
         android:layout_below="@+id/toolbar"
         android:src="@android:drawable/ic_menu_gallery"
@@ -35,8 +28,8 @@
         android:layout_centerVertical="false"
         app:layout_widthPercent="25%"
         app:layout_aspectRatio="100%"
-        app:layout_marginTopPercent="23%"
-        android:id="@+id/Image_Play" />
+        app:layout_marginTopPercent="20%"
+        android:id="@+id/ImagePlay" />
     <TextView
         android:layout_below="@+id/Image"
         android:gravity="center"

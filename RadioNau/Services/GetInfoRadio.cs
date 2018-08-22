@@ -1,7 +1,9 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
+using Android.Widget;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Net;
 using System.Threading.Tasks;
@@ -64,7 +66,7 @@ namespace RadioNau.Services
             {
                 Console.WriteLine("Error:" + ex);
             }
-
+            //On_Receive(json.song);
             return json.song;
         }
 

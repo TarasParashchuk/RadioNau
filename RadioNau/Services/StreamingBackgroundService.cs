@@ -187,7 +187,7 @@ namespace RadioNau
             }
             else
             {
-                contentView.SetImageViewBitmap(Resource.Id.notification_image, GetImageBitmapFromUrl("http://medianau.online/logo.jpg"));
+                contentView.SetImageViewBitmap(Resource.Id.notification_image, GetImageBitmapFromUrl("http://medianau.online/images/logo.png"));
                 contentView.SetTextViewText(Resource.Id.notification_text_title, "Подключение...");
                 contentView.SetTextViewText(Resource.Id.notification_text_artist, "");
             }
