@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Net;
-using System.Threading.Tasks;
 using Android.Content;
 using Android.Widget;
 using Newtonsoft.Json;
@@ -34,8 +33,9 @@ namespace RadioNau.Receiver
                     data_radio.track = str.Substring(0, index);
 
                     var image = GetImage(String.Format("http://ws.audioscrobbler.com/2.0/?method=track.getInfo&api_key=539b27f6a7781319b08e5be3719f2764&artist={0}&track={1}&format=json", data_radio.track, data_radio.artist));
+
                     if (image == string.Empty)
-                        data_radio.image = "http://medianau.online/images/logo.png";
+                        data_radio.image = "http://medianau.top/images/logo.png";
                     else data_radio.image = image;
 
                     mDataRadio = (DataRadio)context;
@@ -43,7 +43,7 @@ namespace RadioNau.Receiver
                 }
                 catch(Exception ex)
                 {
-                    Toast.MakeText(context, ex.Message,ToastLength.Long);
+                    Toast.MakeText(context, ex.Message + "Taras",ToastLength.Long);
                 }
             }
         }

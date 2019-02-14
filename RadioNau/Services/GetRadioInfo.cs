@@ -1,9 +1,8 @@
 ﻿using Android.App;
 using Android.Content;
 using Android.OS;
-using Android.Widget;
+using Android.Support.V4.Content;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Net;
 using System.Threading.Tasks;
@@ -12,17 +11,17 @@ namespace RadioNau.Services
 {
     [Service]
     [IntentFilter(new[] { ActionStartGetInfoRadio, ActionStopGetInfoRadio })]
-    public class GetInfoRadio : Service
+    public class GetRadioInfo : Service
     {
         public const string ActionStartGetInfoRadio = "action.START";
         public const string ActionStopGetInfoRadio = "action.STOP";
-        private Model_JSON json;
+        private RootObject json;
 
         public override void OnCreate()
         {
             base.OnCreate();
 
-            json = new Model_JSON();
+            json = new RootObject();
         }
 
         public override IBinder OnBind(Intent intent)
@@ -40,36 +39,6 @@ namespace RadioNau.Services
             return StartCommandResult.Sticky;
         }
 
-        /*private async Task<Model_Radio> Get_Data_Radio()
-        {
-            var client = new WebClient();
-            var url = new Uri("http://92.249.82.52:8000/status2.xsl");
-            var json = await client.DownloadStringTaskAsync(url);
-            
-            return JsonConvert.DeserializeObject<Model_Radio>(json);
-        }*/
-
-        private async Task<string> Get_Data_Radio()
-        {
-            var client = new WebClient();
-            var url = new Uri("http://92.249.82.52:8000/status2.xsl");
-            var str = await client.DownloadStringTaskAsync(url);
-
-            str = str.Remove(0, 20);
-            str = str.Remove(str.Length - 3, 3);
-
-            try
-            {
-                json = JsonConvert.DeserializeObject<Model_JSON>(str);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Error:" + ex);
-            }
-            //On_Receive(json.song);
-            return json.song;
-        }
-
         private async void TaskDataRadio()
         {
             var intent = new Intent(Receiver.DataRadioReceiver.DataReceiver);
@@ -82,6 +51,23 @@ namespace RadioNau.Services
 
                 await Task.Delay(3000);
             }
+        }
+
+        private async Task<string> Get_Data_Radio()
+        {
+            var client = new WebClient();
+            var url = new Uri("http://92.249.64.135:8000/status-json.xsl");
+            var str = await client.DownloadStringTaskAsync(url);
+
+            try
+            {
+                json = JsonConvert.DeserializeObject<RootObject>(str);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error:" + ex);
+            }
+            return json.icestats.source.title;
         }
 
         public override void OnDestroy()

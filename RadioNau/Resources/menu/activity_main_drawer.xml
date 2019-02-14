@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_favorite"
+        android:icon="@mipmap/baseline_favorite_border_white_18"
+        android:title="Избранное" />
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@mipmap/baseline_share_white_18"
+        android:title="Порекомендовать друзьям" />
+    <item
+        android:id="@+id/nav_contacts"
+        android:icon="@mipmap/baseline_contact_support_white_18"
+        android:title="Контакти" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@mipmap/baseline_settings_white_18"
+        android:title="Настройки" />
+  </group>
+</menu>

@@ -17,8 +17,10 @@ namespace RadioNau
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            var intent = new Intent(this, typeof(GetRadioInfo));
+            intent.SetAction(GetRadioInfo.ActionStartGetInfoRadio);
+            StartService(intent);
 
-            StartService(new Intent(GetInfoRadio.ActionStartGetInfoRadio));
             StartActivity(new Intent(this, typeof(MainActivity)));
         }
     }
